@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+BASE_INPUT_DIR=./input
+BASE_OUTPUT_DIR=./output
+
+# internal name of the catalogue. Dump files to be processed are expected
+# in $BASE_INPUT_DIR/$NAME and CSV results will be in $BASE_OUTPUT_DIR/$NAME/
+NAME="$(basename $0 .sh)"

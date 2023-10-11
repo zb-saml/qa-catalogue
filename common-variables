@@ -1,0 +1,3 @@
+VERSION=0.7.0-rc2
+JAR=target/qa-catalogue-${VERSION}-jar-with-dependencies.jar
+DIR=.

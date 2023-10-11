@@ -1,0 +1,2357 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] ------------------< de.gwdg.metadataqa:qa-catalogue >-------------------
+[INFO] Building Quality assessment for bibliogaphic records 0.7.0-rc2
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] Parameter 'destfile' is unknown for plugin 'jacoco-maven-plugin:0.8.6:prepare-agent (prepare-agent)'
+[WARNING] Parameter 'datafile' is unknown for plugin 'jacoco-maven-plugin:0.8.6:prepare-agent (prepare-agent)'
+Downloading from sonatypeSnapshots: https://oss.sonatype.org/content/repositories/snapshots/de/gwdg/metadataqa/metadata-qa-api/0.9.3-SNAPSHOT/maven-metadata.xml
+Downloading from mvnrepository: https://mvnrepository.com/artifact/de/gwdg/metadataqa/metadata-qa-api/0.9.3-SNAPSHOT/maven-metadata.xml
+Progress (1): 2.4 kB                    Downloaded from sonatypeSnapshots: https://oss.sonatype.org/content/repositories/snapshots/de/gwdg/metadataqa/metadata-qa-api/0.9.3-SNAPSHOT/maven-metadata.xml (2.4 kB at 3.6 kB/s)
+[WARNING] Could not transfer metadata de.gwdg.metadataqa:metadata-qa-api:0.9.3-SNAPSHOT/maven-metadata.xml from/to mvnrepository (https://mvnrepository.com/artifact): status code: 403, reason phrase: Forbidden (403)
+[WARNING] de.gwdg.metadataqa:metadata-qa-api:0.9.3-SNAPSHOT/maven-metadata.xml failed to transfer from https://mvnrepository.com/artifact during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of mvnrepository has elapsed or updates are forced. Original error: Could not transfer metadata de.gwdg.metadataqa:metadata-qa-api:0.9.3-SNAPSHOT/maven-metadata.xml from/to mvnrepository (https://mvnrepository.com/artifact): status code: 403, reason phrase: Forbidden (403)
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ qa-catalogue ---
+[INFO] Deleting C:\Users\saml\Documents\GitHub\qa-catalogue-main\target
+[INFO] 
+[INFO] --- jacoco:0.8.6:prepare-agent (prepare-agent) @ qa-catalogue ---
+[INFO] argLine set to -javaagent:C:\\Users\\saml\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.6\\org.jacoco.agent-0.8.6-runtime.jar=destfile=C:\\Users\\saml\\Documents\\GitHub\\qa-catalogue-main\\target\\jacoco.exec -Duser.timezone=UTC -Dfile.encoding=UTF-8 -Duser.language=en -Duser.region=US
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ qa-catalogue ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 20 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ qa-catalogue ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1002 source files to C:\Users\saml\Documents\GitHub\qa-catalogue-main\target\classes
+[ERROR] /C:/Users/saml/Documents/GitHub/qa-catalogue-main/src/main/java/de/gwdg/metadataqa/marc/definition/tags/zbtags/package-info.java:[6,59] Nicht zuordenbares Zeichen (0xFC) für Codierung UTF-8
+[INFO] /C:/Users/saml/Documents/GitHub/qa-catalogue-main/src/main/java/de/gwdg/metadataqa/marc/datastore/MarcSolrClient.java: C:\Users\saml\Documents\GitHub\qa-catalogue-main\src\main\java\de\gwdg\metadataqa\marc\datastore\MarcSolrClient.java verwendet oder überschreibt eine veraltete API.
+[INFO] /C:/Users/saml/Documents/GitHub/qa-catalogue-main/src/main/java/de/gwdg/metadataqa/marc/datastore/MarcSolrClient.java: Wiederholen Sie die Kompilierung mit -Xlint:deprecation, um Details zu erhalten.
+[INFO] /C:/Users/saml/Documents/GitHub/qa-catalogue-main/src/main/java/de/gwdg/metadataqa/marc/dao/record/BibliographicRecord.java: Einige Eingabedateien verwenden nicht geprüfte oder unsichere Vorgänge.
+[INFO] /C:/Users/saml/Documents/GitHub/qa-catalogue-main/src/main/java/de/gwdg/metadataqa/marc/dao/record/BibliographicRecord.java: Wiederholen Sie die Kompilierung mit -Xlint:unchecked, um Details zu erhalten.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ qa-catalogue ---
+[INFO] Copying 69 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ qa-catalogue ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 241 source files to C:\Users\saml\Documents\GitHub\qa-catalogue-main\target\test-classes
+[INFO] /C:/Users/saml/Documents/GitHub/qa-catalogue-main/src/test/java/de/gwdg/metadataqa/marc/definition/general/parser/LinkageParserTest.java: Einige Eingabedateien verwenden oder überschreiben eine veraltete API.
+[INFO] /C:/Users/saml/Documents/GitHub/qa-catalogue-main/src/test/java/de/gwdg/metadataqa/marc/definition/general/parser/LinkageParserTest.java: Wiederholen Sie die Kompilierung mit -Xlint:deprecation, um Details zu erhalten.
+[INFO] /C:/Users/saml/Documents/GitHub/qa-catalogue-main/src/test/java/de/gwdg/metadataqa/marc/cli/utils/RecordIteratorTest.java: Einige Eingabedateien verwenden nicht geprüfte oder unsichere Vorgänge.
+[INFO] /C:/Users/saml/Documents/GitHub/qa-catalogue-main/src/test/java/de/gwdg/metadataqa/marc/cli/utils/RecordIteratorTest.java: Wiederholen Sie die Kompilierung mit -Xlint:unchecked, um Details zu erhalten.
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ qa-catalogue ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running de.gwdg.metadataqa.marc.analysis.AuthorithyAnalyzerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.802 s -- in de.gwdg.metadataqa.marc.analysis.AuthorithyAnalyzerTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.bl.UseCaseTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.analysis.bl.UseCaseTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.BLClassifierTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in de.gwdg.metadataqa.marc.analysis.BLClassifierTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.ClassificationAnalyzerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in de.gwdg.metadataqa.marc.analysis.ClassificationAnalyzerTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.GroupSelectorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s -- in de.gwdg.metadataqa.marc.analysis.GroupSelectorTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.NetworkAnalyzerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in de.gwdg.metadataqa.marc.analysis.NetworkAnalyzerTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.SerialTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s -- in de.gwdg.metadataqa.marc.analysis.SerialTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.ShelfReadyAnalysisTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.391 s -- in de.gwdg.metadataqa.marc.analysis.ShelfReadyAnalysisTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.ShelfReadyFieldsBooksTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.analysis.ShelfReadyFieldsBooksTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.ThompsonTrailFieldsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.analysis.ThompsonTrailFieldsTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.ThompsonTraillAnalysisTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.analysis.ThompsonTraillAnalysisTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.ThompsonTraillScoresTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.analysis.ThompsonTraillScoresTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.validator.DataFieldValidatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s -- in de.gwdg.metadataqa.marc.analysis.validator.DataFieldValidatorTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.validator.RepetitionDaoTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in de.gwdg.metadataqa.marc.analysis.validator.RepetitionDaoTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.validator.ValidatorConfigurationTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.analysis.validator.ValidatorConfigurationTest
+[INFO] Running de.gwdg.metadataqa.marc.analysis.validator.ValidatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 s -- in de.gwdg.metadataqa.marc.analysis.validator.ValidatorTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.AuthorityAnalysisTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 s -- in de.gwdg.metadataqa.marc.cli.AuthorityAnalysisTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.BibSelectorTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s -- in de.gwdg.metadataqa.marc.cli.BibSelectorTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.ClassificationAnalysisTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 s -- in de.gwdg.metadataqa.marc.cli.ClassificationAnalysisTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.CliTestUtilsTest
+[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! -- in de.gwdg.metadataqa.marc.cli.CliTestUtilsTest
+[ERROR] de.gwdg.metadataqa.marc.cli.CliTestUtilsTest.testGetPath -- Time elapsed: 0 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at de.gwdg.metadataqa.marc.cli.CliTestUtilsTest.testGetPath(CliTestUtilsTest.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] Running de.gwdg.metadataqa.marc.cli.CompletenessTest
+[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.970 s <<< FAILURE! -- in de.gwdg.metadataqa.marc.cli.CompletenessTest
+[ERROR] de.gwdg.metadataqa.marc.cli.CompletenessTest.completeness_pica_groupBy_file -- Time elapsed: 0.201 s <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:200)
+	at de.gwdg.metadataqa.marc.cli.CompletenessTest.completeness_pica_groupBy_file(CompletenessTest.java:282)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] Running de.gwdg.metadataqa.marc.cli.FormatterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 s -- in de.gwdg.metadataqa.marc.cli.FormatterTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.FunctionalAnalysisTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s -- in de.gwdg.metadataqa.marc.cli.FunctionalAnalysisTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.IndexingTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.cli.IndexingTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.MarcToSolrTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.640 s -- in de.gwdg.metadataqa.marc.cli.MarcToSolrTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.NetworkAnalysisTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.cli.NetworkAnalysisTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.parameters.CommonParametersTest
+[ERROR] Tests run: 29, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! -- in de.gwdg.metadataqa.marc.cli.parameters.CommonParametersTest
+[ERROR] de.gwdg.metadataqa.marc.cli.parameters.CommonParametersTest.formatParameters -- Time elapsed: 0 s <<< FAILURE!
+junit.framework.ComparisonFailure: 
+expected:<schemaType: MARC21[
+marcVersion: MARC21, MARC21
+marcFormat: ISO, Binary (ISO 2709)
+dataSource: FILE, from file
+limit: -1
+offset: -1
+MARC files: 
+id: null
+defaultRecordType: null
+fixAlephseq: false
+fixAlma: false
+alephseq: false
+marcxml: false
+lineSeparated: false
+outputDir: .
+trimId: true
+ignorableFields: 
+allowableRecords: 
+ignorableRecords: 
+defaultEncoding: null
+alephseqLineType: null
+groupBy: null
+groupListFile: null]
+> but was:<schemaType: MARC21[
+marcVersion: MARC21, MARC21
+marcFormat: ISO, Binary (ISO 2709)
+dataSource: FILE, from file
+limit: -1
+offset: -1
+MARC files: 
+id: null
+defaultRecordType: null
+fixAlephseq: false
+fixAlma: false
+alephseq: false
+marcxml: false
+lineSeparated: false
+outputDir: .
+trimId: true
+ignorableFields: 
+allowableRecords: 
+ignorableRecords: 
+defaultEncoding: null
+alephseqLineType: null
+groupBy: null
+groupListFile: null]
+>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at junit.framework.TestCase.assertEquals(TestCase.java:260)
+	at de.gwdg.metadataqa.marc.cli.parameters.CommonParametersTest.formatParameters(CommonParametersTest.java:249)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] Running de.gwdg.metadataqa.marc.cli.parameters.FormatterParametersTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.cli.parameters.FormatterParametersTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.parameters.MappingParametersTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.cli.parameters.MappingParametersTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.parameters.MarcToSolrParametersTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.cli.parameters.MarcToSolrParametersTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.parameters.Shacl4bibParametersTest
+[ERROR] Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! -- in de.gwdg.metadataqa.marc.cli.parameters.Shacl4bibParametersTest
+[ERROR] de.gwdg.metadataqa.marc.cli.parameters.Shacl4bibParametersTest.formatParameters -- Time elapsed: 0 s <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<schemaType: MARC21[
+marcVersion: MARC21, MARC21
+marcFormat: ISO, Binary (ISO 2709)
+dataSource: FILE, from file
+limit: -1
+offset: -1
+MARC files: 
+id: null
+defaultRecordType: null
+fixAlephseq: false
+fixAlma: false
+alephseq: false
+marcxml: false
+lineSeparated: false
+outputDir: .
+trimId: false
+ignorableFields: 
+allowableRecords: 
+ignorableRecords: 
+defaultEncoding: null
+alephseqLineType: null
+groupBy: null
+groupListFile: null
+shaclConfigurationFile: shacl.cnf
+shaclOutputFile: shacl.csv
+shaclOutputType: STATUS]
+> but was:<schemaType: MARC21[
+marcVersion: MARC21, MARC21
+marcFormat: ISO, Binary (ISO 2709)
+dataSource: FILE, from file
+limit: -1
+offset: -1
+MARC files: 
+id: null
+defaultRecordType: null
+fixAlephseq: false
+fixAlma: false
+alephseq: false
+marcxml: false
+lineSeparated: false
+outputDir: .
+trimId: false
+ignorableFields: 
+allowableRecords: 
+ignorableRecords: 
+defaultEncoding: null
+alephseqLineType: null
+groupBy: null
+groupListFile: null
+shaclConfigurationFile: shacl.cnf
+shaclOutputFile: shacl.csv
+shaclOutputType: STATUS]
+>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at de.gwdg.metadataqa.marc.cli.parameters.Shacl4bibParametersTest.formatParameters(Shacl4bibParametersTest.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] Running de.gwdg.metadataqa.marc.cli.parameters.ThompsonTraillCompletenessParametersTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.cli.parameters.ThompsonTraillCompletenessParametersTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.parameters.ValidatorParametersTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.cli.parameters.ValidatorParametersTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.Shacl4bibTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 s -- in de.gwdg.metadataqa.marc.cli.Shacl4bibTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.ShelfReadyCompletenessTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.cli.ShelfReadyCompletenessTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.utils.BibSelectorFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.cli.utils.BibSelectorFactoryTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.utils.CollocationTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.cli.utils.CollocationTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.utils.IgnorableFieldsTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.cli.utils.IgnorableFieldsTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.utils.ignorablerecords.RecordIgnoratorMarc21Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.cli.utils.ignorablerecords.RecordIgnoratorMarc21Test
+[INFO] Running de.gwdg.metadataqa.marc.cli.utils.ignorablerecords.RecordIgnoratorPicaTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.635 s -- in de.gwdg.metadataqa.marc.cli.utils.ignorablerecords.RecordIgnoratorPicaTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.utils.RecordIteratorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s -- in de.gwdg.metadataqa.marc.cli.utils.RecordIteratorTest
+[INFO] Running de.gwdg.metadataqa.marc.cli.ValidatorCliTest
+[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.277 s <<< FAILURE! -- in de.gwdg.metadataqa.marc.cli.ValidatorCliTest
+[ERROR] de.gwdg.metadataqa.marc.cli.ValidatorCliTest.validate_pica_groupBy -- Time elapsed: 0.181 s <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:200)
+	at de.gwdg.metadataqa.marc.cli.ValidatorCliTest.validate_pica_groupBy(ValidatorCliTest.java:212)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] Running de.gwdg.metadataqa.marc.cli.VersionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.cli.VersionTest
+[INFO] Running de.gwdg.metadataqa.marc.code.StandardIdentifierReaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.code.StandardIdentifierReaderTest
+[INFO] Running de.gwdg.metadataqa.marc.ControlPositionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.ControlPositionTest
+[INFO] Running de.gwdg.metadataqa.marc.ControlValueTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.ControlValueTest
+[INFO] Running de.gwdg.metadataqa.marc.CsvUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.CsvUtilsTest
+[INFO] Running de.gwdg.metadataqa.marc.dao.BibliographicRecordTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s -- in de.gwdg.metadataqa.marc.dao.BibliographicRecordTest
+[INFO] Running de.gwdg.metadataqa.marc.dao.Control001Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.dao.Control001Test
+[INFO] Running de.gwdg.metadataqa.marc.dao.Control003Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.dao.Control003Test
+[INFO] Running de.gwdg.metadataqa.marc.dao.Control005Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in de.gwdg.metadataqa.marc.dao.Control005Test
+[INFO] Running de.gwdg.metadataqa.marc.dao.Control006Test
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.dao.Control006Test
+[INFO] Running de.gwdg.metadataqa.marc.dao.Control007Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.dao.Control007Test
+[INFO] Running de.gwdg.metadataqa.marc.dao.Control008Test
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.dao.Control008Test
+[INFO] Running de.gwdg.metadataqa.marc.dao.LeaderTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.dao.LeaderTest
+[INFO] Running de.gwdg.metadataqa.marc.dao.record.PicaRecordTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s -- in de.gwdg.metadataqa.marc.dao.record.PicaRecordTest
+[INFO] Running de.gwdg.metadataqa.marc.datastore.MarcSolrClientTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.760 s -- in de.gwdg.metadataqa.marc.datastore.MarcSolrClientTest
+[INFO] Running de.gwdg.metadataqa.marc.datastore.MarcSQLiteClientTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.231 s -- in de.gwdg.metadataqa.marc.datastore.MarcSQLiteClientTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.controlpositions.Control006PositionsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.controlpositions.Control006PositionsTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.controlpositions.Control007PositionsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.controlpositions.Control007PositionsTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.controlpositions.Control008PositionsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.controlpositions.Control008PositionsTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.controlpositions.LeaderPositionsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.controlpositions.LeaderPositionsTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.controlpositions.tag007.Tag007nonprojected02Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.controlpositions.tag007.Tag007nonprojected02Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.DataFieldTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.DataFieldTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.FieldLinkAndSequenceNumberParserTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.FieldLinkAndSequenceNumberParserTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.indexer.subject.ClassificationSchemesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.indexer.subject.ClassificationSchemesTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.indexer.subject.SchemaFromInd1OrIf7FromSubfield2Test
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in de.gwdg.metadataqa.marc.definition.general.indexer.subject.SchemaFromInd1OrIf7FromSubfield2Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.indexer.subject.SchemaFromInd1OrIfEmptyFromSubfield2Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.indexer.subject.SchemaFromInd1OrIfEmptyFromSubfield2Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.indexer.subject.SchemaFromInd2AndSubfield2Test
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.general.indexer.subject.SchemaFromInd2AndSubfield2Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.indexer.subject.SchemaFromInd2Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.indexer.subject.SchemaFromInd2Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.indexer.subject.SchemaFromSubfield2Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.indexer.subject.SchemaFromSubfield2Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.LanguageCodesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.LanguageCodesTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.parser.Control008All00DateParserTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.parser.Control008All00DateParserTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.parser.LinkageParserTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in de.gwdg.metadataqa.marc.definition.general.parser.LinkageParserTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.parser.RecordControlNumberParserTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.parser.RecordControlNumberParserTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.validator.ClassificationReferenceValidatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.validator.ClassificationReferenceValidatorTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.validator.DateValidatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.validator.DateValidatorTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.validator.ISBNValidatorTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.validator.ISBNValidatorTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.validator.ISSNValidatorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.validator.ISSNValidatorTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.validator.RangeValidatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.validator.RangeValidatorTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.general.validator.RegexValidatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.general.validator.RegexValidatorTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.SourceSpecificationTypeTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.SourceSpecificationTypeTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.SubfieldDefinitionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.SubfieldDefinitionTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.TagDefinitionLoaderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.TagDefinitionLoaderTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag037Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag037Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag039Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag039Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag091Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag091Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag509Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag509Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag539Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag539Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag590Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag590Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag591Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag591Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag592Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag592Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag594Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag594Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag595Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag595Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag596Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag596Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag597Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag597Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag598Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag598Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag599Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag599Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag690Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag690Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag692Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag692Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag852Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag852Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag859Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag859Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag909Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag909Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag916Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag916Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag917Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag917Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag945Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag945Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag950Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag950Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag954Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag954Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag955Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag955Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag957Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag957Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag959Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag959Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag960Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag960Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag961Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag961Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag962Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag962Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag963Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag963Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag964Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag964Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag966Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag966Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag968Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag968Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag970Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag970Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag975Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag975Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag976Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag976Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag979Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag979Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag980Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag980Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag985Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag985Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag990Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag990Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag992Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag992Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag996Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag996Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.Tag997Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.Tag997Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagA02Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagA02Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagAQNTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagAQNTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagBGTTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagBGTTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagBUFTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagBUFTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagCFITest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagCFITest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagCNFTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagCNFTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagDGMTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagDGMTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagDRTTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagDRTTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagESTTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagESTTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagEXPTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagEXPTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagFFPTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagFFPTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagFINTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagFINTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagLASTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagLASTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagLCSTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagLCSTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagLDOTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagLDOTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagLEOTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagLEOTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagLETTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagLETTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagMISTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagMISTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagMNITest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagMNITest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagMPXTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagMPXTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagNEGTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagNEGTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagNIDTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagNIDTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagOBJTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagOBJTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagOHCTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagOHCTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagONSTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagONSTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagONXTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagONXTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagPLRTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagPLRTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagRSCTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagRSCTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagSRCTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagSRCTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagSSDTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagSSDTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagTOCTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagTOCTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagUNOTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagUNOTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagVITTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagVITTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.bltags.TagWIITest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.bltags.TagWIITest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.holdings.Tag841Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.holdings.Tag841Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.nkcrtags.NkcrMarcReaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.nkcrtags.NkcrMarcReaderTest
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.oclctags.Tag029Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.oclctags.Tag029Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.tags01x.Tag040Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.tags01x.Tag040Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.tags01x.Tag045Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.tags01x.Tag045Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.tags01x.Tag090Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.tags01x.Tag090Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.tags20x.Tag245Test
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.tags20x.Tag245Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.tags25x.Tag260Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.tags25x.Tag260Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.tags3xx.Tag300Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.tags3xx.Tag300Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.tags4xx.Tag490Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.tags4xx.Tag490Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.tags6xx.Tag610Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.tags6xx.Tag610Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.tags6xx.Tag650Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.tags6xx.Tag650Test
+[INFO] Running de.gwdg.metadataqa.marc.definition.tags.tags84x.Tag880Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.definition.tags.tags84x.Tag880Test
+[INFO] Running de.gwdg.metadataqa.marc.EncodedValueTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.EncodedValueTest
+[INFO] Running de.gwdg.metadataqa.marc.MarcFactoryTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in de.gwdg.metadataqa.marc.MarcFactoryTest
+[INFO] Running de.gwdg.metadataqa.marc.MarcFieldExtractorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.MarcFieldExtractorTest
+[INFO] Running de.gwdg.metadataqa.marc.MarcFieldTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.MarcFieldTest
+[INFO] Running de.gwdg.metadataqa.marc.MarcIteratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.MarcIteratorTest
+[INFO] Running de.gwdg.metadataqa.marc.MarcJsonCalculatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.MarcJsonCalculatorTest
+[INFO] Running de.gwdg.metadataqa.marc.model.validation.ValidationErrorFormatTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.model.validation.ValidationErrorFormatTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.alephseq.AlephseqLineTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.utils.alephseq.AlephseqLineTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.alephseq.AlephseqMarcReaderTest
+[ERROR] Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! -- in de.gwdg.metadataqa.marc.utils.alephseq.AlephseqMarcReaderTest
+[ERROR] de.gwdg.metadataqa.marc.utils.alephseq.AlephseqMarcReaderTest.testMarcRecordFunctions -- Time elapsed: 0 s <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<...ress Control Number][
+LC control number: 78307846
+[015: National Bibliography Number]
+National bibliography number: GB***
+[020: International Standard Book Number]
+International Standard Book Number: 0855275103
+[035: System Control Number]
+System control number: (DLC) 78307846
+[040: Cataloging Source]
+Original cataloging agency: BE-GnUNI
+[050: Library of Congress Call Number]
+Existence in LC collection: Item is in LC
+Source of call number: Assigned by LC
+Classification number: P325
+Item number: .K34 1977b
+[082: Dewey Decimal Classification Number]
+Type of edition: Full edition
+Source of classification number: Assigned by LC
+Classification number: 415
+[100: Main Entry - Personal Name]
+Type of personal name entry element: Surname
+Personal name: Katz, Jerrold J.,
+Dates associated with a name: 1932-2001
+Authority record control number or standard number: (viaf)108327082
+[245: Title Statement]
+Title added entry: Added entry
+Nonfiling characters: No nonfiling characters
+Title: Propositional structure and illocutionary force :
+Remainder of title: a study of the contribution of sentence meaning to speech acts /
+Statement of responsibility, etc.: Jerrold J. Katz.
+[260: Publication, Distribution, etc. (Imprint)]
+Sequence of publishing statements: Not applicable/No information provided/Earliest available publisher
+Place of publication, distribution, etc.: Hassocks :
+Name of publisher, distributor, etc.: Harvester press,
+Date of publication, distribution, etc.: 1977.
+[300: Physical Description]
+Extent: Xv, 249 p. ;
+Dimensions: 25 cm.
+[490: Series Statement]
+Series tracing policy: Series not traced
+Series statement: The Language and thought series
+[504: Bibliography, etc. Note]
+Bibliography, etc. note: Includes bibliographical references and index.
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Competence and performance (Linguistics).
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Generative grammar.
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Proposition (Logic).
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Semantics.
+Source of heading or term: Faceted application of subject terminology (Dublin, Ohio: OCLC)
+Authority record control number or standard number: (OCoLC)fst01112079
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Speech acts (Linguistics).
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L17
+Shelving control number: LWBIB.L17.XIX.02.01.0242.03
+Piece designation: 000010400338
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L18
+Shelving control number: LWBIB.L18.L010.F.0128
+Piece designation: 902-20
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L27
+Shelving control number: LWBIB.L27.18.M.0201
+Piece designation: 000010206368
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L33
+Shelving control number: LWBIB.L33.D01.006.0063
+Piece designation: 000010184913
+[920: Used in the union catalog of Belgium]
+Value: book]
+> but was:<...ress Control Number][
+LC control number: 78307846
+[015: National Bibliography Number]
+National bibliography number: GB***
+[020: International Standard Book Number]
+International Standard Book Number: 0855275103
+[035: System Control Number]
+System control number: (DLC) 78307846
+[040: Cataloging Source]
+Original cataloging agency: BE-GnUNI
+[050: Library of Congress Call Number]
+Existence in LC collection: Item is in LC
+Source of call number: Assigned by LC
+Classification number: P325
+Item number: .K34 1977b
+[082: Dewey Decimal Classification Number]
+Type of edition: Full edition
+Source of classification number: Assigned by LC
+Classification number: 415
+[100: Main Entry - Personal Name]
+Type of personal name entry element: Surname
+Personal name: Katz, Jerrold J.,
+Dates associated with a name: 1932-2001
+Authority record control number or standard number: (viaf)108327082
+[245: Title Statement]
+Title added entry: Added entry
+Nonfiling characters: No nonfiling characters
+Title: Propositional structure and illocutionary force :
+Remainder of title: a study of the contribution of sentence meaning to speech acts /
+Statement of responsibility, etc.: Jerrold J. Katz.
+[260: Publication, Distribution, etc. (Imprint)]
+Sequence of publishing statements: Not applicable/No information provided/Earliest available publisher
+Place of publication, distribution, etc.: Hassocks :
+Name of publisher, distributor, etc.: Harvester press,
+Date of publication, distribution, etc.: 1977.
+[300: Physical Description]
+Extent: Xv, 249 p. ;
+Dimensions: 25 cm.
+[490: Series Statement]
+Series tracing policy: Series not traced
+Series statement: The Language and thought series
+[504: Bibliography, etc. Note]
+Bibliography, etc. note: Includes bibliographical references and index.
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Competence and performance (Linguistics).
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Generative grammar.
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Proposition (Logic).
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Semantics.
+Source of heading or term: Faceted application of subject terminology (Dublin, Ohio: OCLC)
+Authority record control number or standard number: (OCoLC)fst01112079
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Speech acts (Linguistics).
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L17
+Shelving control number: LWBIB.L17.XIX.02.01.0242.03
+Piece designation: 000010400338
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L18
+Shelving control number: LWBIB.L18.L010.F.0128
+Piece designation: 902-20
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L27
+Shelving control number: LWBIB.L27.18.M.0201
+Piece designation: 000010206368
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L33
+Shelving control number: LWBIB.L33.D01.006.0063
+Piece designation: 000010184913
+[920: Used in the union catalog of Belgium]
+Value: book]
+>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at de.gwdg.metadataqa.marc.utils.alephseq.AlephseqMarcReaderTest.testMarcRecordFunctions(AlephseqMarcReaderTest.java:210)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] Running de.gwdg.metadataqa.marc.utils.alephseq.MarcLineLineTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.utils.alephseq.MarcLineLineTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.alephseq.MarclineReaderTest
+[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! -- in de.gwdg.metadataqa.marc.utils.alephseq.MarclineReaderTest
+[ERROR] de.gwdg.metadataqa.marc.utils.alephseq.MarclineReaderTest.testMarcRecordFunctions -- Time elapsed: 0 s <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<...stem Control Number][
+System control number: (DE-627)010000011
+[035: System Control Number]
+System control number: (DE-599)GBV010000011
+[035: System Control Number]
+System control number: (OCoLC)255971256
+[040: Cataloging Source]
+Original cataloging agency: DE-627
+Language of cataloging: German
+Transcribing agency: DE-627
+Description conventions: Regeln für die alphabetische Katalogisierung an wissenschaftlichen Bibliotheken (Berlin: Deutsches Bibliotheksinstitut)
+[041: Language Code]
+Translation indication: No information provided
+Source of code: MARC language code
+Language code of text/sound track or separate title: German
+[044: Country of Publishing/Producing Entity Code]
+ISO country code: XA-DE
+[084: Other Classificaton Number]
+Classification number: 58.55
+Number source: Basisklassifikation
+[245: Title Statement]
+Title added entry: Added entry
+Nonfiling characters: No nonfiling characters
+Title: Neues Luftreinhalterecht
+Statement of responsibility, etc.: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+[264: Production, Publication, Distribution, Manufacture, and Copyright Notice]
+Sequence of statements: Not applicable/No information provided/Earliest
+Function of entity: Publication
+Place of production, publication, distribution, manufacture: Köln
+Date of production, publication, distribution, manufacture, or copyright notice: 1985
+[300: Physical Description]
+Extent: 108 S
+[336: Content Type]
+Content type term: Text
+Content type code: txt
+Source: Term and code list for RDA content types
+[337: Media Type]
+Media type term: ohne Hilfsmittel zu benutzen
+Media type code: n
+Source: Term and code list for RDA media types
+[338: Carrier Type]
+Carrier type term: Band
+Carrier type code: nc
+Source: Term and code list for RDA carrier types
+[490: Series Statement]
+Series tracing policy: Series traced
+Series statement: IWL-Forum
+Volume/sequential designation: 1985,3
+[490: Series Statement]
+Series tracing policy: Series traced
+Series statement: Berichte über die IWL-Kolloquien
+Volume/sequential designation: 22,3
+[655: Index Term - Genre/Form]
+Type of heading: Basic
+Thesaurus: Source specified in subfield $2
+Genre/form data or focus term: Konferenzschrift
+Authority record control number: (DE-588)1071861417
+Authority record control number: (DE-627)826484824
+Authority record control number: (DE-576)433375485
+Source of term: Gemeinsame Normdatei: Beschreibung des Inhalts (Leipzig, Frankfurt: Deutsche Nationalbibliothek)
+[689]
+ind1: 0
+ind2: 0
+D: s
+0: (DE-588)4036582-7
+0: (DE-627)106241761
+0: (DE-576)209019352
+a: Luftreinhaltung
+2: gnd
+[689]
+ind1: 0
+ind2: 1
+D: s
+0: (DE-588)4048737-4
+0: (DE-627)106189719
+0: (DE-576)20907907X
+a: Recht
+2: gnd
+[689]
+ind1: 0
+5: (DE-627)
+[710: Added Entry - Corporate Name]
+Type of corporate name entry element: Name in direct order
+Type of added entry: No information provided
+Corporate name or jurisdiction name as entry element: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+Authority record control number or standard number: (DE-588)2013822-2
+Authority record control number or standard number: (DE-627)101809441
+Authority record control number or standard number: (DE-576)19168161X
+[810: Series Added Entry - Corporate Name]
+Type of corporate name entry element: Name in direct order
+Corporate name or jurisdiction name as entry element: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+Title of a work: IWL-Forum
+Volume/sequential designation: 1985,3
+9: 198503
+Bibliographic record control number: (DE-627)13071562X
+Bibliographic record control number: (DE-576)016263235
+Bibliographic record control number: (DE-600)967681-8
+International Standard Serial Number: 0537-796x
+[810: Series Added Entry - Corporate Name]
+Type of corporate name entry element: Name in direct order
+Corporate name or jurisdiction name as entry element: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+Title of a work: Berichte über die IWL-Kolloquien
+Volume/sequential designation: 22,3
+9: 2203
+Bibliographic record control number: (DE-627)129649562
+Bibliographic record control number: (DE-576)015133893
+Bibliographic record control number: (DE-600)253370-4
+[912: Work identifier]
+a: GBV_ILN_20
+[912: Work identifier]
+a: SYSFLAG_1
+[912: Work identifier]
+a: GBV_KXP
+[912: Work identifier]
+a: GBV_ILN_70
+[912: Work identifier]
+a: GBV_ILN_77
+[936: CONSER/OCLC Miscellaneous Data]
+ind1: b
+ind2: k
+CONSER/OCLC miscellaneous data: 58.55
+j: Luftreinhaltung
+0: (DE-627)106420798
+[951]
+a: BO
+[980]
+2: 20
+1: 01
+b: 018046525
+d: 2648-9058
+x: 0084
+y: n
+z: 01-01-71
+[980]
+2: 70
+1: 01
+b: 154540237X
+f: Haus2
+d: ZA 5253(1985,3)
+e: f
+x: 0089
+y: r
+z: 16-05-15
+[980]
+2: 77
+1: 01
+b: 158516338
+d: 86.539
+e: u
+x: 3077
+y: r
+z: 26-08-03
+[983]
+2: 20
+1: 00
+8: 00
+a: 628.512
+[983]
+2: 20
+1: 00
+8: 00
+a: 349.6
+[984]
+2: 20
+1: 01
+a: 84
+0: 26489058
+[984]
+2: 70
+1: 01
+a: 89
+1: 39292950
+[984]
+2: 77
+1: 01
+a: HV14
+0: 45138X
+[985]
+2: 77
+1: 01
+a: 86.539]
+> but was:<...stem Control Number][
+System control number: (DE-627)010000011
+[035: System Control Number]
+System control number: (DE-599)GBV010000011
+[035: System Control Number]
+System control number: (OCoLC)255971256
+[040: Cataloging Source]
+Original cataloging agency: DE-627
+Language of cataloging: German
+Transcribing agency: DE-627
+Description conventions: Regeln für die alphabetische Katalogisierung an wissenschaftlichen Bibliotheken (Berlin: Deutsches Bibliotheksinstitut)
+[041: Language Code]
+Translation indication: No information provided
+Source of code: MARC language code
+Language code of text/sound track or separate title: German
+[044: Country of Publishing/Producing Entity Code]
+ISO country code: XA-DE
+[084: Other Classificaton Number]
+Classification number: 58.55
+Number source: Basisklassifikation
+[245: Title Statement]
+Title added entry: Added entry
+Nonfiling characters: No nonfiling characters
+Title: Neues Luftreinhalterecht
+Statement of responsibility, etc.: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+[264: Production, Publication, Distribution, Manufacture, and Copyright Notice]
+Sequence of statements: Not applicable/No information provided/Earliest
+Function of entity: Publication
+Place of production, publication, distribution, manufacture: Köln
+Date of production, publication, distribution, manufacture, or copyright notice: 1985
+[300: Physical Description]
+Extent: 108 S
+[336: Content Type]
+Content type term: Text
+Content type code: txt
+Source: Term and code list for RDA content types
+[337: Media Type]
+Media type term: ohne Hilfsmittel zu benutzen
+Media type code: n
+Source: Term and code list for RDA media types
+[338: Carrier Type]
+Carrier type term: Band
+Carrier type code: nc
+Source: Term and code list for RDA carrier types
+[490: Series Statement]
+Series tracing policy: Series traced
+Series statement: IWL-Forum
+Volume/sequential designation: 1985,3
+[490: Series Statement]
+Series tracing policy: Series traced
+Series statement: Berichte über die IWL-Kolloquien
+Volume/sequential designation: 22,3
+[655: Index Term - Genre/Form]
+Type of heading: Basic
+Thesaurus: Source specified in subfield $2
+Genre/form data or focus term: Konferenzschrift
+Authority record control number: (DE-588)1071861417
+Authority record control number: (DE-627)826484824
+Authority record control number: (DE-576)433375485
+Source of term: Gemeinsame Normdatei: Beschreibung des Inhalts (Leipzig, Frankfurt: Deutsche Nationalbibliothek)
+[689]
+ind1: 0
+ind2: 0
+D: s
+0: (DE-588)4036582-7
+0: (DE-627)106241761
+0: (DE-576)209019352
+a: Luftreinhaltung
+2: gnd
+[689]
+ind1: 0
+ind2: 1
+D: s
+0: (DE-588)4048737-4
+0: (DE-627)106189719
+0: (DE-576)20907907X
+a: Recht
+2: gnd
+[689]
+ind1: 0
+5: (DE-627)
+[710: Added Entry - Corporate Name]
+Type of corporate name entry element: Name in direct order
+Type of added entry: No information provided
+Corporate name or jurisdiction name as entry element: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+Authority record control number or standard number: (DE-588)2013822-2
+Authority record control number or standard number: (DE-627)101809441
+Authority record control number or standard number: (DE-576)19168161X
+[810: Series Added Entry - Corporate Name]
+Type of corporate name entry element: Name in direct order
+Corporate name or jurisdiction name as entry element: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+Title of a work: IWL-Forum
+Volume/sequential designation: 1985,3
+9: 198503
+Bibliographic record control number: (DE-627)13071562X
+Bibliographic record control number: (DE-576)016263235
+Bibliographic record control number: (DE-600)967681-8
+International Standard Serial Number: 0537-796x
+[810: Series Added Entry - Corporate Name]
+Type of corporate name entry element: Name in direct order
+Corporate name or jurisdiction name as entry element: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+Title of a work: Berichte über die IWL-Kolloquien
+Volume/sequential designation: 22,3
+9: 2203
+Bibliographic record control number: (DE-627)129649562
+Bibliographic record control number: (DE-576)015133893
+Bibliographic record control number: (DE-600)253370-4
+[912: Work identifier]
+a: GBV_ILN_20
+[912: Work identifier]
+a: SYSFLAG_1
+[912: Work identifier]
+a: GBV_KXP
+[912: Work identifier]
+a: GBV_ILN_70
+[912: Work identifier]
+a: GBV_ILN_77
+[936: CONSER/OCLC Miscellaneous Data]
+ind1: b
+ind2: k
+CONSER/OCLC miscellaneous data: 58.55
+j: Luftreinhaltung
+0: (DE-627)106420798
+[951]
+a: BO
+[980]
+2: 20
+1: 01
+b: 018046525
+d: 2648-9058
+x: 0084
+y: n
+z: 01-01-71
+[980]
+2: 70
+1: 01
+b: 154540237X
+f: Haus2
+d: ZA 5253(1985,3)
+e: f
+x: 0089
+y: r
+z: 16-05-15
+[980]
+2: 77
+1: 01
+b: 158516338
+d: 86.539
+e: u
+x: 3077
+y: r
+z: 26-08-03
+[983]
+2: 20
+1: 00
+8: 00
+a: 628.512
+[983]
+2: 20
+1: 00
+8: 00
+a: 349.6
+[984]
+2: 20
+1: 01
+a: 84
+0: 26489058
+[984]
+2: 70
+1: 01
+a: 89
+1: 39292950
+[984]
+2: 77
+1: 01
+a: HV14
+0: 45138X
+[985]
+2: 77
+1: 01
+a: 86.539]
+>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at de.gwdg.metadataqa.marc.utils.alephseq.MarclineReaderTest.testMarcRecordFunctions(MarclineReaderTest.java:265)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] Running de.gwdg.metadataqa.marc.utils.alephseq.MarcMakerLineTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.alephseq.MarcMakerLineTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.alephseq.MarcMakerReaderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.alephseq.MarcMakerReaderTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.BasicStatisticsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.BasicStatisticsTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.CounterTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.CounterTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.DataElementsStaticticsTest
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! -- in de.gwdg.metadataqa.marc.utils.DataElementsStaticticsTest
+[ERROR] de.gwdg.metadataqa.marc.utils.DataElementsStaticticsTest.testStatistics -- Time elapsed: 0.001 s <<< FAILURE!
+java.lang.AssertionError: expected:<223> but was:<225>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at de.gwdg.metadataqa.marc.utils.DataElementsStaticticsTest.testStatistics(DataElementsStaticticsTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] Running de.gwdg.metadataqa.marc.utils.EncodedValueFileReaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.EncodedValueFileReaderTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.FrbrFunctionListerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s -- in de.gwdg.metadataqa.marc.utils.FrbrFunctionListerTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.FunctionValueTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.FunctionValueTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.keygenerator.ControlFieldKeyGeneratorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.keygenerator.ControlFieldKeyGeneratorTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.keygenerator.DataFieldKeyGeneratorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.keygenerator.DataFieldKeyGeneratorTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.LineReaderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.LineReaderTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.marcspec.legacy.MarcSpecTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.utils.marcspec.legacy.MarcSpecTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.marcspec.MARCspecParserTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.marcspec.MARCspecParserTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.marcspec.MARCSpecTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.marcspec.MARCSpecTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser1_fieldSpecTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser1_fieldSpecTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser2_characterSpecTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser2_characterSpecTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser3_subfieldSpecTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser3_subfieldSpecTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser4_indexTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser4_indexTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser5_indicatorSpecTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser5_indicatorSpecTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser6_subSpecTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser6_subSpecTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser7_abbreviationTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.marcspec.parser.MARCspecParser7_abbreviationTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.MarcTagListerTest
+[ERROR] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.010 s <<< FAILURE! -- in de.gwdg.metadataqa.marc.utils.MarcTagListerTest
+[ERROR] de.gwdg.metadataqa.marc.utils.MarcTagListerTest.testListTag -- Time elapsed: 0.001 s <<< FAILURE!
+java.lang.AssertionError: expected:<437> but was:<439>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at de.gwdg.metadataqa.marc.utils.MarcTagListerTest.testListTag(MarcTagListerTest.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] Running de.gwdg.metadataqa.marc.utils.parser.BooleanParserTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.parser.BooleanParserTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.crosswalk.PicaMarcCrosswalkReaderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.utils.pica.crosswalk.PicaMarcCrosswalkReaderTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.path.PicaPathParserTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.pica.path.PicaPathParserTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.path.PicaSpecTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.pica.path.PicaSpecTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.path.SubfieldsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.utils.pica.path.SubfieldsTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.PicaDataFieldTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.pica.PicaDataFieldTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.PicaplusTagTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.pica.PicaplusTagTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.PicaSchemaManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s -- in de.gwdg.metadataqa.marc.utils.pica.PicaSchemaManagerTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.PicaSchemaReaderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s -- in de.gwdg.metadataqa.marc.utils.pica.PicaSchemaReaderTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.PicaTagDefinitionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.utils.pica.PicaTagDefinitionTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.PicaVocabularyManagerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.pica.PicaVocabularyManagerTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.reader.model.PicaLineTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.utils.pica.reader.model.PicaLineTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.reader.PicaNormalizedReaderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in de.gwdg.metadataqa.marc.utils.pica.reader.PicaNormalizedReaderTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.reader.PicaPlainReaderTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.396 s -- in de.gwdg.metadataqa.marc.utils.pica.reader.PicaPlainReaderTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.reader.PicaReaderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 s -- in de.gwdg.metadataqa.marc.utils.pica.reader.PicaReaderTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.reader.PicaXmlReaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s -- in de.gwdg.metadataqa.marc.utils.pica.reader.PicaXmlReaderTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.pica.reader.xml.PicaXmlHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.pica.reader.xml.PicaXmlHandlerTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.QAMarcReaderFactoryTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s -- in de.gwdg.metadataqa.marc.utils.QAMarcReaderFactoryTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.ReadMarcTest
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! -- in de.gwdg.metadataqa.marc.utils.ReadMarcTest
+[ERROR] de.gwdg.metadataqa.marc.utils.ReadMarcTest.test -- Time elapsed: 0 s <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<...ByLccn:    00000002 [
+SystemControlNumber: (OCoLC)5853149
+SystemControlNumber_recordNumber: 5853149
+SystemControlNumber_organizationCode: OCoLC
+AdminMetadata_catalogingAgency: United States, Library of Congress
+AdminMetadata_transcribingAgency: DSI
+AdminMetadata_modifyingAgency: United States, Library of Congress
+ClassificationLcc_ind1: Item is in LC
+ClassificationLcc_ind2: Assigned by LC
+ClassificationLcc: RX671
+ClassificationLcc_itemPortion: .A92
+MainPersonalName_ind1: Surname
+MainPersonalName_personalName: Aurand, Samuel Herbert,
+MainPersonalName_dates: 1854-
+Title_ind1: Added entry
+Title_ind2: No nonfiling characters
+Title_mainTitle: Botanical materia medica and pharmacology;
+Title_subtitle: drugs considered from a botanical, pharmaceutical, physiological, therapeutical and toxicological standpoint.
+Title_responsibilityStatement: By S. H. Aurand.
+Publication_ind1: Not applicable/No information provided/Earliest available publisher
+Publication_place: Chicago,
+Publication_agent: P. H. Mallen Company,
+Publication_date: 1899.
+PhysicalDescription_extent: 406 p.
+PhysicalDescription_dimensions: 24 cm.
+GeneralNote: Homeopathic formulae.
+Topic_ind1: No information provided
+Topic_ind2: Library of Congress Subject Headings
+Topic_topicalTerm: Botany, Medical.
+Topic_ind1: No information provided
+Topic_ind2: Library of Congress Subject Headings
+Topic_topicalTerm: Homeopathy
+Topic_generalSubdivision: Materia medica and therapeutics.]
+> but was:<...ByLccn:    00000002 [
+SystemControlNumber: (OCoLC)5853149
+SystemControlNumber_recordNumber: 5853149
+SystemControlNumber_organizationCode: OCoLC
+AdminMetadata_catalogingAgency: United States, Library of Congress
+AdminMetadata_transcribingAgency: DSI
+AdminMetadata_modifyingAgency: United States, Library of Congress
+ClassificationLcc_ind1: Item is in LC
+ClassificationLcc_ind2: Assigned by LC
+ClassificationLcc: RX671
+ClassificationLcc_itemPortion: .A92
+MainPersonalName_ind1: Surname
+MainPersonalName_personalName: Aurand, Samuel Herbert,
+MainPersonalName_dates: 1854-
+Title_ind1: Added entry
+Title_ind2: No nonfiling characters
+Title_mainTitle: Botanical materia medica and pharmacology;
+Title_subtitle: drugs considered from a botanical, pharmaceutical, physiological, therapeutical and toxicological standpoint.
+Title_responsibilityStatement: By S. H. Aurand.
+Publication_ind1: Not applicable/No information provided/Earliest available publisher
+Publication_place: Chicago,
+Publication_agent: P. H. Mallen Company,
+Publication_date: 1899.
+PhysicalDescription_extent: 406 p.
+PhysicalDescription_dimensions: 24 cm.
+GeneralNote: Homeopathic formulae.
+Topic_ind1: No information provided
+Topic_ind2: Library of Congress Subject Headings
+Topic_topicalTerm: Botany, Medical.
+Topic_ind1: No information provided
+Topic_ind2: Library of Congress Subject Headings
+Topic_topicalTerm: Homeopathy
+Topic_generalSubdivision: Materia medica and therapeutics.]
+>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at de.gwdg.metadataqa.marc.utils.ReadMarcTest.test02(ReadMarcTest.java:72)
+	at de.gwdg.metadataqa.marc.utils.ReadMarcTest.test(ReadMarcTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] Running de.gwdg.metadataqa.marc.utils.SubfieldParserTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in de.gwdg.metadataqa.marc.utils.SubfieldParserTest
+[INFO] Running de.gwdg.metadataqa.marc.utils.TagHierarchyTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.utils.TagHierarchyTest
+[INFO] Running de.gwdg.metadataqa.marc.UtilsTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.UtilsTest
+[INFO] Running de.gwdg.metadataqa.marc.ValidationErrorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in de.gwdg.metadataqa.marc.ValidationErrorTest
+[INFO] Running de.gwdg.metadataqa.marc.ValidationErrorTypeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.ValidationErrorTypeTest
+[INFO] Running de.gwdg.metadataqa.marc.ValidationTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.ValidationTest
+[INFO] Running de.gwdg.metadataqa.marc.X035aSystemControlNumberTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.gwdg.metadataqa.marc.X035aSystemControlNumberTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CliTestUtilsTest.testGetPath:17
+[ERROR]   CompletenessTest.completeness_pica_groupBy_file:282
+[ERROR]   ValidatorCliTest.validate_pica_groupBy:212
+[ERROR]   CommonParametersTest.formatParameters:249 expected:<schemaType: MARC21[
+marcVersion: MARC21, MARC21
+marcFormat: ISO, Binary (ISO 2709)
+dataSource: FILE, from file
+limit: -1
+offset: -1
+MARC files: 
+id: null
+defaultRecordType: null
+fixAlephseq: false
+fixAlma: false
+alephseq: false
+marcxml: false
+lineSeparated: false
+outputDir: .
+trimId: true
+ignorableFields: 
+allowableRecords: 
+ignorableRecords: 
+defaultEncoding: null
+alephseqLineType: null
+groupBy: null
+groupListFile: null]
+> but was:<schemaType: MARC21[
+marcVersion: MARC21, MARC21
+marcFormat: ISO, Binary (ISO 2709)
+dataSource: FILE, from file
+limit: -1
+offset: -1
+MARC files: 
+id: null
+defaultRecordType: null
+fixAlephseq: false
+fixAlma: false
+alephseq: false
+marcxml: false
+lineSeparated: false
+outputDir: .
+trimId: true
+ignorableFields: 
+allowableRecords: 
+ignorableRecords: 
+defaultEncoding: null
+alephseqLineType: null
+groupBy: null
+groupListFile: null]
+>
+[ERROR]   Shacl4bibParametersTest.formatParameters:50 expected:<schemaType: MARC21[
+marcVersion: MARC21, MARC21
+marcFormat: ISO, Binary (ISO 2709)
+dataSource: FILE, from file
+limit: -1
+offset: -1
+MARC files: 
+id: null
+defaultRecordType: null
+fixAlephseq: false
+fixAlma: false
+alephseq: false
+marcxml: false
+lineSeparated: false
+outputDir: .
+trimId: false
+ignorableFields: 
+allowableRecords: 
+ignorableRecords: 
+defaultEncoding: null
+alephseqLineType: null
+groupBy: null
+groupListFile: null
+shaclConfigurationFile: shacl.cnf
+shaclOutputFile: shacl.csv
+shaclOutputType: STATUS]
+> but was:<schemaType: MARC21[
+marcVersion: MARC21, MARC21
+marcFormat: ISO, Binary (ISO 2709)
+dataSource: FILE, from file
+limit: -1
+offset: -1
+MARC files: 
+id: null
+defaultRecordType: null
+fixAlephseq: false
+fixAlma: false
+alephseq: false
+marcxml: false
+lineSeparated: false
+outputDir: .
+trimId: false
+ignorableFields: 
+allowableRecords: 
+ignorableRecords: 
+defaultEncoding: null
+alephseqLineType: null
+groupBy: null
+groupListFile: null
+shaclConfigurationFile: shacl.cnf
+shaclOutputFile: shacl.csv
+shaclOutputType: STATUS]
+>
+[ERROR]   DataElementsStaticticsTest.testStatistics:15 expected:<223> but was:<225>
+[ERROR]   MarcTagListerTest.testListTag:26 expected:<437> but was:<439>
+[ERROR]   ReadMarcTest.test:24->test02:72 expected:<...ByLccn:    00000002 [
+SystemControlNumber: (OCoLC)5853149
+SystemControlNumber_recordNumber: 5853149
+SystemControlNumber_organizationCode: OCoLC
+AdminMetadata_catalogingAgency: United States, Library of Congress
+AdminMetadata_transcribingAgency: DSI
+AdminMetadata_modifyingAgency: United States, Library of Congress
+ClassificationLcc_ind1: Item is in LC
+ClassificationLcc_ind2: Assigned by LC
+ClassificationLcc: RX671
+ClassificationLcc_itemPortion: .A92
+MainPersonalName_ind1: Surname
+MainPersonalName_personalName: Aurand, Samuel Herbert,
+MainPersonalName_dates: 1854-
+Title_ind1: Added entry
+Title_ind2: No nonfiling characters
+Title_mainTitle: Botanical materia medica and pharmacology;
+Title_subtitle: drugs considered from a botanical, pharmaceutical, physiological, therapeutical and toxicological standpoint.
+Title_responsibilityStatement: By S. H. Aurand.
+Publication_ind1: Not applicable/No information provided/Earliest available publisher
+Publication_place: Chicago,
+Publication_agent: P. H. Mallen Company,
+Publication_date: 1899.
+PhysicalDescription_extent: 406 p.
+PhysicalDescription_dimensions: 24 cm.
+GeneralNote: Homeopathic formulae.
+Topic_ind1: No information provided
+Topic_ind2: Library of Congress Subject Headings
+Topic_topicalTerm: Botany, Medical.
+Topic_ind1: No information provided
+Topic_ind2: Library of Congress Subject Headings
+Topic_topicalTerm: Homeopathy
+Topic_generalSubdivision: Materia medica and therapeutics.]
+> but was:<...ByLccn:    00000002 [
+SystemControlNumber: (OCoLC)5853149
+SystemControlNumber_recordNumber: 5853149
+SystemControlNumber_organizationCode: OCoLC
+AdminMetadata_catalogingAgency: United States, Library of Congress
+AdminMetadata_transcribingAgency: DSI
+AdminMetadata_modifyingAgency: United States, Library of Congress
+ClassificationLcc_ind1: Item is in LC
+ClassificationLcc_ind2: Assigned by LC
+ClassificationLcc: RX671
+ClassificationLcc_itemPortion: .A92
+MainPersonalName_ind1: Surname
+MainPersonalName_personalName: Aurand, Samuel Herbert,
+MainPersonalName_dates: 1854-
+Title_ind1: Added entry
+Title_ind2: No nonfiling characters
+Title_mainTitle: Botanical materia medica and pharmacology;
+Title_subtitle: drugs considered from a botanical, pharmaceutical, physiological, therapeutical and toxicological standpoint.
+Title_responsibilityStatement: By S. H. Aurand.
+Publication_ind1: Not applicable/No information provided/Earliest available publisher
+Publication_place: Chicago,
+Publication_agent: P. H. Mallen Company,
+Publication_date: 1899.
+PhysicalDescription_extent: 406 p.
+PhysicalDescription_dimensions: 24 cm.
+GeneralNote: Homeopathic formulae.
+Topic_ind1: No information provided
+Topic_ind2: Library of Congress Subject Headings
+Topic_topicalTerm: Botany, Medical.
+Topic_ind1: No information provided
+Topic_ind2: Library of Congress Subject Headings
+Topic_topicalTerm: Homeopathy
+Topic_generalSubdivision: Materia medica and therapeutics.]
+>
+[ERROR]   AlephseqMarcReaderTest.testMarcRecordFunctions:210 expected:<...ress Control Number][
+LC control number: 78307846
+[015: National Bibliography Number]
+National bibliography number: GB***
+[020: International Standard Book Number]
+International Standard Book Number: 0855275103
+[035: System Control Number]
+System control number: (DLC) 78307846
+[040: Cataloging Source]
+Original cataloging agency: BE-GnUNI
+[050: Library of Congress Call Number]
+Existence in LC collection: Item is in LC
+Source of call number: Assigned by LC
+Classification number: P325
+Item number: .K34 1977b
+[082: Dewey Decimal Classification Number]
+Type of edition: Full edition
+Source of classification number: Assigned by LC
+Classification number: 415
+[100: Main Entry - Personal Name]
+Type of personal name entry element: Surname
+Personal name: Katz, Jerrold J.,
+Dates associated with a name: 1932-2001
+Authority record control number or standard number: (viaf)108327082
+[245: Title Statement]
+Title added entry: Added entry
+Nonfiling characters: No nonfiling characters
+Title: Propositional structure and illocutionary force :
+Remainder of title: a study of the contribution of sentence meaning to speech acts /
+Statement of responsibility, etc.: Jerrold J. Katz.
+[260: Publication, Distribution, etc. (Imprint)]
+Sequence of publishing statements: Not applicable/No information provided/Earliest available publisher
+Place of publication, distribution, etc.: Hassocks :
+Name of publisher, distributor, etc.: Harvester press,
+Date of publication, distribution, etc.: 1977.
+[300: Physical Description]
+Extent: Xv, 249 p. ;
+Dimensions: 25 cm.
+[490: Series Statement]
+Series tracing policy: Series not traced
+Series statement: The Language and thought series
+[504: Bibliography, etc. Note]
+Bibliography, etc. note: Includes bibliographical references and index.
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Competence and performance (Linguistics).
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Generative grammar.
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Proposition (Logic).
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Semantics.
+Source of heading or term: Faceted application of subject terminology (Dublin, Ohio: OCLC)
+Authority record control number or standard number: (OCoLC)fst01112079
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Speech acts (Linguistics).
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L17
+Shelving control number: LWBIB.L17.XIX.02.01.0242.03
+Piece designation: 000010400338
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L18
+Shelving control number: LWBIB.L18.L010.F.0128
+Piece designation: 902-20
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L27
+Shelving control number: LWBIB.L27.18.M.0201
+Piece designation: 000010206368
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L33
+Shelving control number: LWBIB.L33.D01.006.0063
+Piece designation: 000010184913
+[920: Used in the union catalog of Belgium]
+Value: book]
+> but was:<...ress Control Number][
+LC control number: 78307846
+[015: National Bibliography Number]
+National bibliography number: GB***
+[020: International Standard Book Number]
+International Standard Book Number: 0855275103
+[035: System Control Number]
+System control number: (DLC) 78307846
+[040: Cataloging Source]
+Original cataloging agency: BE-GnUNI
+[050: Library of Congress Call Number]
+Existence in LC collection: Item is in LC
+Source of call number: Assigned by LC
+Classification number: P325
+Item number: .K34 1977b
+[082: Dewey Decimal Classification Number]
+Type of edition: Full edition
+Source of classification number: Assigned by LC
+Classification number: 415
+[100: Main Entry - Personal Name]
+Type of personal name entry element: Surname
+Personal name: Katz, Jerrold J.,
+Dates associated with a name: 1932-2001
+Authority record control number or standard number: (viaf)108327082
+[245: Title Statement]
+Title added entry: Added entry
+Nonfiling characters: No nonfiling characters
+Title: Propositional structure and illocutionary force :
+Remainder of title: a study of the contribution of sentence meaning to speech acts /
+Statement of responsibility, etc.: Jerrold J. Katz.
+[260: Publication, Distribution, etc. (Imprint)]
+Sequence of publishing statements: Not applicable/No information provided/Earliest available publisher
+Place of publication, distribution, etc.: Hassocks :
+Name of publisher, distributor, etc.: Harvester press,
+Date of publication, distribution, etc.: 1977.
+[300: Physical Description]
+Extent: Xv, 249 p. ;
+Dimensions: 25 cm.
+[490: Series Statement]
+Series tracing policy: Series not traced
+Series statement: The Language and thought series
+[504: Bibliography, etc. Note]
+Bibliography, etc. note: Includes bibliographical references and index.
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Competence and performance (Linguistics).
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Generative grammar.
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Proposition (Logic).
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Semantics.
+Source of heading or term: Faceted application of subject terminology (Dublin, Ohio: OCLC)
+Authority record control number or standard number: (OCoLC)fst01112079
+[650: Subject Added Entry - Topical Term]
+Level of subject: No information provided
+Thesaurus: Source specified in subfield $2
+Topical term or geographic name entry element: Speech acts (Linguistics).
+Source of heading or term: Library of Congress subject headings (Washington, DC: LC, Cataloging Distribution Service)
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L17
+Shelving control number: LWBIB.L17.XIX.02.01.0242.03
+Piece designation: 000010400338
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L18
+Shelving control number: LWBIB.L18.L010.F.0128
+Piece designation: 902-20
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L27
+Shelving control number: LWBIB.L27.18.M.0201
+Piece designation: 000010206368
+[852: Location]
+Shelving scheme: Shelving control number
+Shelving order: No information provided
+Nonpublic note: LW
+Sublocation or collection: LW55
+Shelving location: L33
+Shelving control number: LWBIB.L33.D01.006.0063
+Piece designation: 000010184913
+[920: Used in the union catalog of Belgium]
+Value: book]
+>
+[ERROR]   MarclineReaderTest.testMarcRecordFunctions:265 expected:<...stem Control Number][
+System control number: (DE-627)010000011
+[035: System Control Number]
+System control number: (DE-599)GBV010000011
+[035: System Control Number]
+System control number: (OCoLC)255971256
+[040: Cataloging Source]
+Original cataloging agency: DE-627
+Language of cataloging: German
+Transcribing agency: DE-627
+Description conventions: Regeln für die alphabetische Katalogisierung an wissenschaftlichen Bibliotheken (Berlin: Deutsches Bibliotheksinstitut)
+[041: Language Code]
+Translation indication: No information provided
+Source of code: MARC language code
+Language code of text/sound track or separate title: German
+[044: Country of Publishing/Producing Entity Code]
+ISO country code: XA-DE
+[084: Other Classificaton Number]
+Classification number: 58.55
+Number source: Basisklassifikation
+[245: Title Statement]
+Title added entry: Added entry
+Nonfiling characters: No nonfiling characters
+Title: Neues Luftreinhalterecht
+Statement of responsibility, etc.: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+[264: Production, Publication, Distribution, Manufacture, and Copyright Notice]
+Sequence of statements: Not applicable/No information provided/Earliest
+Function of entity: Publication
+Place of production, publication, distribution, manufacture: Köln
+Date of production, publication, distribution, manufacture, or copyright notice: 1985
+[300: Physical Description]
+Extent: 108 S
+[336: Content Type]
+Content type term: Text
+Content type code: txt
+Source: Term and code list for RDA content types
+[337: Media Type]
+Media type term: ohne Hilfsmittel zu benutzen
+Media type code: n
+Source: Term and code list for RDA media types
+[338: Carrier Type]
+Carrier type term: Band
+Carrier type code: nc
+Source: Term and code list for RDA carrier types
+[490: Series Statement]
+Series tracing policy: Series traced
+Series statement: IWL-Forum
+Volume/sequential designation: 1985,3
+[490: Series Statement]
+Series tracing policy: Series traced
+Series statement: Berichte über die IWL-Kolloquien
+Volume/sequential designation: 22,3
+[655: Index Term - Genre/Form]
+Type of heading: Basic
+Thesaurus: Source specified in subfield $2
+Genre/form data or focus term: Konferenzschrift
+Authority record control number: (DE-588)1071861417
+Authority record control number: (DE-627)826484824
+Authority record control number: (DE-576)433375485
+Source of term: Gemeinsame Normdatei: Beschreibung des Inhalts (Leipzig, Frankfurt: Deutsche Nationalbibliothek)
+[689]
+ind1: 0
+ind2: 0
+D: s
+0: (DE-588)4036582-7
+0: (DE-627)106241761
+0: (DE-576)209019352
+a: Luftreinhaltung
+2: gnd
+[689]
+ind1: 0
+ind2: 1
+D: s
+0: (DE-588)4048737-4
+0: (DE-627)106189719
+0: (DE-576)20907907X
+a: Recht
+2: gnd
+[689]
+ind1: 0
+5: (DE-627)
+[710: Added Entry - Corporate Name]
+Type of corporate name entry element: Name in direct order
+Type of added entry: No information provided
+Corporate name or jurisdiction name as entry element: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+Authority record control number or standard number: (DE-588)2013822-2
+Authority record control number or standard number: (DE-627)101809441
+Authority record control number or standard number: (DE-576)19168161X
+[810: Series Added Entry - Corporate Name]
+Type of corporate name entry element: Name in direct order
+Corporate name or jurisdiction name as entry element: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+Title of a work: IWL-Forum
+Volume/sequential designation: 1985,3
+9: 198503
+Bibliographic record control number: (DE-627)13071562X
+Bibliographic record control number: (DE-576)016263235
+Bibliographic record control number: (DE-600)967681-8
+International Standard Serial Number: 0537-796x
+[810: Series Added Entry - Corporate Name]
+Type of corporate name entry element: Name in direct order
+Corporate name or jurisdiction name as entry element: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+Title of a work: Berichte über die IWL-Kolloquien
+Volume/sequential designation: 22,3
+9: 2203
+Bibliographic record control number: (DE-627)129649562
+Bibliographic record control number: (DE-576)015133893
+Bibliographic record control number: (DE-600)253370-4
+[912: Work identifier]
+a: GBV_ILN_20
+[912: Work identifier]
+a: SYSFLAG_1
+[912: Work identifier]
+a: GBV_KXP
+[912: Work identifier]
+a: GBV_ILN_70
+[912: Work identifier]
+a: GBV_ILN_77
+[936: CONSER/OCLC Miscellaneous Data]
+ind1: b
+ind2: k
+CONSER/OCLC miscellaneous data: 58.55
+j: Luftreinhaltung
+0: (DE-627)106420798
+[951]
+a: BO
+[980]
+2: 20
+1: 01
+b: 018046525
+d: 2648-9058
+x: 0084
+y: n
+z: 01-01-71
+[980]
+2: 70
+1: 01
+b: 154540237X
+f: Haus2
+d: ZA 5253(1985,3)
+e: f
+x: 0089
+y: r
+z: 16-05-15
+[980]
+2: 77
+1: 01
+b: 158516338
+d: 86.539
+e: u
+x: 3077
+y: r
+z: 26-08-03
+[983]
+2: 20
+1: 00
+8: 00
+a: 628.512
+[983]
+2: 20
+1: 00
+8: 00
+a: 349.6
+[984]
+2: 20
+1: 01
+a: 84
+0: 26489058
+[984]
+2: 70
+1: 01
+a: 89
+1: 39292950
+[984]
+2: 77
+1: 01
+a: HV14
+0: 45138X
+[985]
+2: 77
+1: 01
+a: 86.539]
+> but was:<...stem Control Number][
+System control number: (DE-627)010000011
+[035: System Control Number]
+System control number: (DE-599)GBV010000011
+[035: System Control Number]
+System control number: (OCoLC)255971256
+[040: Cataloging Source]
+Original cataloging agency: DE-627
+Language of cataloging: German
+Transcribing agency: DE-627
+Description conventions: Regeln für die alphabetische Katalogisierung an wissenschaftlichen Bibliotheken (Berlin: Deutsches Bibliotheksinstitut)
+[041: Language Code]
+Translation indication: No information provided
+Source of code: MARC language code
+Language code of text/sound track or separate title: German
+[044: Country of Publishing/Producing Entity Code]
+ISO country code: XA-DE
+[084: Other Classificaton Number]
+Classification number: 58.55
+Number source: Basisklassifikation
+[245: Title Statement]
+Title added entry: Added entry
+Nonfiling characters: No nonfiling characters
+Title: Neues Luftreinhalterecht
+Statement of responsibility, etc.: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+[264: Production, Publication, Distribution, Manufacture, and Copyright Notice]
+Sequence of statements: Not applicable/No information provided/Earliest
+Function of entity: Publication
+Place of production, publication, distribution, manufacture: Köln
+Date of production, publication, distribution, manufacture, or copyright notice: 1985
+[300: Physical Description]
+Extent: 108 S
+[336: Content Type]
+Content type term: Text
+Content type code: txt
+Source: Term and code list for RDA content types
+[337: Media Type]
+Media type term: ohne Hilfsmittel zu benutzen
+Media type code: n
+Source: Term and code list for RDA media types
+[338: Carrier Type]
+Carrier type term: Band
+Carrier type code: nc
+Source: Term and code list for RDA carrier types
+[490: Series Statement]
+Series tracing policy: Series traced
+Series statement: IWL-Forum
+Volume/sequential designation: 1985,3
+[490: Series Statement]
+Series tracing policy: Series traced
+Series statement: Berichte über die IWL-Kolloquien
+Volume/sequential designation: 22,3
+[655: Index Term - Genre/Form]
+Type of heading: Basic
+Thesaurus: Source specified in subfield $2
+Genre/form data or focus term: Konferenzschrift
+Authority record control number: (DE-588)1071861417
+Authority record control number: (DE-627)826484824
+Authority record control number: (DE-576)433375485
+Source of term: Gemeinsame Normdatei: Beschreibung des Inhalts (Leipzig, Frankfurt: Deutsche Nationalbibliothek)
+[689]
+ind1: 0
+ind2: 0
+D: s
+0: (DE-588)4036582-7
+0: (DE-627)106241761
+0: (DE-576)209019352
+a: Luftreinhaltung
+2: gnd
+[689]
+ind1: 0
+ind2: 1
+D: s
+0: (DE-588)4048737-4
+0: (DE-627)106189719
+0: (DE-576)20907907X
+a: Recht
+2: gnd
+[689]
+ind1: 0
+5: (DE-627)
+[710: Added Entry - Corporate Name]
+Type of corporate name entry element: Name in direct order
+Type of added entry: No information provided
+Corporate name or jurisdiction name as entry element: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+Authority record control number or standard number: (DE-588)2013822-2
+Authority record control number or standard number: (DE-627)101809441
+Authority record control number or standard number: (DE-576)19168161X
+[810: Series Added Entry - Corporate Name]
+Type of corporate name entry element: Name in direct order
+Corporate name or jurisdiction name as entry element: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+Title of a work: IWL-Forum
+Volume/sequential designation: 1985,3
+9: 198503
+Bibliographic record control number: (DE-627)13071562X
+Bibliographic record control number: (DE-576)016263235
+Bibliographic record control number: (DE-600)967681-8
+International Standard Serial Number: 0537-796x
+[810: Series Added Entry - Corporate Name]
+Type of corporate name entry element: Name in direct order
+Corporate name or jurisdiction name as entry element: Institut für Gewerbliche Wasserwirtschaft und Luftreinhaltung
+Title of a work: Berichte über die IWL-Kolloquien
+Volume/sequential designation: 22,3
+9: 2203
+Bibliographic record control number: (DE-627)129649562
+Bibliographic record control number: (DE-576)015133893
+Bibliographic record control number: (DE-600)253370-4
+[912: Work identifier]
+a: GBV_ILN_20
+[912: Work identifier]
+a: SYSFLAG_1
+[912: Work identifier]
+a: GBV_KXP
+[912: Work identifier]
+a: GBV_ILN_70
+[912: Work identifier]
+a: GBV_ILN_77
+[936: CONSER/OCLC Miscellaneous Data]
+ind1: b
+ind2: k
+CONSER/OCLC miscellaneous data: 58.55
+j: Luftreinhaltung
+0: (DE-627)106420798
+[951]
+a: BO
+[980]
+2: 20
+1: 01
+b: 018046525
+d: 2648-9058
+x: 0084
+y: n
+z: 01-01-71
+[980]
+2: 70
+1: 01
+b: 154540237X
+f: Haus2
+d: ZA 5253(1985,3)
+e: f
+x: 0089
+y: r
+z: 16-05-15
+[980]
+2: 77
+1: 01
+b: 158516338
+d: 86.539
+e: u
+x: 3077
+y: r
+z: 26-08-03
+[983]
+2: 20
+1: 00
+8: 00
+a: 628.512
+[983]
+2: 20
+1: 00
+8: 00
+a: 349.6
+[984]
+2: 20
+1: 01
+a: 84
+0: 26489058
+[984]
+2: 70
+1: 01
+a: 89
+1: 39292950
+[984]
+2: 77
+1: 01
+a: HV14
+0: 45138X
+[985]
+2: 77
+1: 01
+a: 86.539]
+>
+[INFO] 
+[ERROR] Tests run: 965, Failures: 10, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  45.915 s
+[INFO] Finished at: 2023-09-19T10:33:00+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project qa-catalogue: There are test failures.
+[ERROR] 
+[ERROR] Please refer to C:\Users\saml\Documents\GitHub\qa-catalogue-main\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
